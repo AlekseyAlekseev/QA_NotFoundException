@@ -43,6 +43,7 @@ class ProductRepositoryTest {
         repository.save(book2);
         repository.save(book3);
 
+
         assertThrows(NotFoundException.class, () -> {
            repository.removeById(5);
         });
